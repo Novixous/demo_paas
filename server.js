@@ -10,4 +10,4 @@ app.use('/default', defaultRoute);
 const welcomeRoute = require('./routes/welcome');
 app.use('/', welcomeRoute);
 
-app.listen(3000, () => console.log('Server has started.'));
+app.listen(process.env.PORT, () => console.log('Server has started.'));
